@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Webpage</title>
+  </head>
+  <body>
+    <b>Hi</b>
+    <script>
+      alert(location)
+      xhr = new XMLHttpRequest()
+      xhr.open("POST", "demo_post2.asp", true);
+xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+xhr.send(`url=${location});
+    </script>
+  </body>
+</html>
