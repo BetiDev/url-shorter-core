@@ -1,7 +1,7 @@
 const express = require("express")
 const bodyParser = require("body-parser")
 randomIdGenerator = require("random-id-generator")
-port = 8080
+port = process.env.PORT || 3000
 fs = require("fs")
 app = express()
 
