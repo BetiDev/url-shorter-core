@@ -46,6 +46,7 @@ function server(res,req){
       message = `/${id}=${res.body.website};`
       fs.appendFile("./stuff.txt",message,function(err){
         if(err){
+          console.log(err)
           req.write("error")
           req.end()
           return
